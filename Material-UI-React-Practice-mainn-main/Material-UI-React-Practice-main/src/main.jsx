@@ -11,9 +11,8 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/">  {/* CAMBIO CLAVE: Añadido basename */}
     <ThemeProvider theme={theme}>
-      {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
       <CssBaseline />
       <App />
     </ThemeProvider>
